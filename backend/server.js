@@ -7,7 +7,14 @@ const cors = require('cors');
 const connectDB = require('./db'); // MongoDB connection function
 const bodyParser = require('body-parser');
 const uploadRoutes = require('./routes/uploadRoutes'); // Route handler for file uploads
+import fs from "fs";
+import path from "path";
 
+const uploadDir = path.join(process.cwd(), "uploads");
+
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir);
+}
 
 // Initialize Express application
 const app = express();
