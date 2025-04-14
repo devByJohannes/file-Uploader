@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 // Component definition (should ideally be PascalCase e.g. Page)
-const page = () => {
+const Page = () => {
   // State to hold the result data retrieved from localStorage
   const [data, setData] = useState(null);
 
@@ -102,4 +102,4 @@ const page = () => {
 };
 
 // Export the component
-export default page;
+export default Page;
