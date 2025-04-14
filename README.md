@@ -34,5 +34,7 @@ A full-stack application that allows users to upload image or PDF files, extract
 
 ## 📁 Project Structure
 The project has two folders frontend and backend
+Download the app into your local device and extra it then instal the necessary modules using npm 
+Then start backend server using npm start and start frontend using npm run dev
 
 
