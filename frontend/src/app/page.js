@@ -35,7 +35,7 @@ export default function Home() {
     }
 
     // Send form data to backend API
-    const res = await fetch("http://localhost:5001/api/upload", {
+    const res = await fetch(https://file-uploader-1-kgl6.onrender.com/api/upload", {
       method: "POST",
       body: formDataToSend,
     });
