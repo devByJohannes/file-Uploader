@@ -19,8 +19,9 @@ app.use(bodyParser.json());
 
 
 // Enable Cross-Origin Resource Sharing (CORS) for all routes
-app.use(cors());
-
+app.use(cors({
+  origin: "https://file-uploader-fim6.vercel.app"
+}));
 
 // Basic route for root URL (can be used as a health check)
 app.get('/', (req, res) => {
